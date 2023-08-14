@@ -6,24 +6,24 @@ public class printArrSpiralWAy {
         int maxc=arr[0].length-1;
         int count=1;
         int ele=arr.length*arr[0].length;
-        while(count<ele){
-            for (int i = minr,j=minc; i <=maxr && count<ele; i++) {
-                System.out.println(arr[i][j]);
+        while(count<=ele){
+            for (int i = minr,j=minc; i <=maxr && count<=ele; i++) {
+                System.out.print(arr[i][j]+" ");
                 count++;
             }
             minc++;
-            for (int j = minc,i=maxr; j <=maxc && count<ele; j++) {
-                System.out.println(arr[i][j]);
+            for (int j = minc,i=maxr; j <=maxc && count<=ele; j++) {
+                System.out.print(arr[i][j]+" ");
                 count++;
             }
             maxr--;
-            for (int i = maxr,j=maxc; i >=minr && count<ele; i--) {
-                System.out.println(arr[i][j]);
+            for (int i = maxr,j=maxc; i >=minr && count<=ele; i--) {
+                System.out.print(arr[i][j]+" ");
                 count++;
             }
             maxc--;
-            for (int j = maxc,i=minr; i >=minc && count<ele; i--) {
-                System.out.println(arr[i][j]);
+            for (int j = maxc,i=minr; j >=minc && count<=ele; j--) {
+                System.out.print(arr[i][j]+" ");
                 count++;
             }
             minr++;
@@ -40,7 +40,7 @@ public class printArrSpiralWAy {
         }
     }
     public static void main(String[] args) {
-        int[][] arr = { { 11, 22,33 }, { 44, 55,66 }, { 77, 88,99 },{10,11,12} };
+        int[][] arr = { { 11, 22,33,54 }, { 44, 55,66,64 }, { 77, 88,99,74 },{10,11,12,84} };
         show(arr);
         print(arr);
     }
