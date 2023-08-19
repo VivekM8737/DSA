@@ -1,11 +1,9 @@
 public class selectionSort {
     public static void sSort(int []arr){
-        for (int i = 0; i < arr.length; i++) {
-            int min=arr[i];
+        for (int i = 0; i < arr.length-1; i++) {
             int midi=i;
-            for (int j = i; j < arr.length; j++) {
-                if(min>arr[j]){
-                    min=arr[j];
+            for (int j = i+1; j < arr.length; j++) {
+                if(arr[midi]>arr[j]){
                     midi=j;
                 }
             }
@@ -23,7 +21,7 @@ public class selectionSort {
     }
     
     public static void main(String[] args) {
-        int []arr= {1,4,8,2,3};
+        int []arr= {5,1,4,8,2,3};
         print(arr);
         sSort(arr);
         print(arr);
