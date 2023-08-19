@@ -7,7 +7,6 @@ public class rotatearr {
         int[] tarr = new int[2 * (maxr - minr + maxc - minc)];
         int ind = 0;
         for (int i = minr, j = minc; i <= maxr; i++) {
-            // System.out.print(arr[i][j]+" ");
             tarr[ind] = arr[i][j];
             ind++;
         }
