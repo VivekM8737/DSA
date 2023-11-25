@@ -78,12 +78,13 @@ public class createATree {
                     st.peek().children.add(t);
 
                 }
+
                 st.push(t);
             }
         }
-        // display(root);
+        display(root);
         // System.out.println(size(root));
-        System.out.println(max_(root));
+        // System.out.println(max_(root));
         // size(root);
         System.out.println(height(root));
         order(root);
