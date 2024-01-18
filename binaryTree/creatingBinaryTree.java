@@ -61,7 +61,7 @@ public class creatingBinaryTree {
         return rn;
 
     }
-
+   
     public static void display(Node node) {
         if (node == null) {
             return;
