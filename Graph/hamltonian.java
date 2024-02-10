@@ -77,7 +77,7 @@ public class hamltonian {
         for (int i = 0; i < visited.length; i++) {
             visited[i]=false;
         }
-        HashSet<Integer> visit=new HashSet();
+        HashSet<Integer> visit=new HashSet<>();
         printHamiltonianCycleAndPath(graph,0,6,visit,0+"",0);
 
     }
