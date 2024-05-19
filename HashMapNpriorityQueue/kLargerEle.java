@@ -1,10 +1,11 @@
+import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class kLargerEle {
     public static void kEle(int [] arr,int k){
-        PriorityQueue<Integer> pq=new PriorityQueue<>();
+        PriorityQueue<Integer> pq=new PriorityQueue<>(Collections.reverseOrder());
         for (int i =0;i<arr.length;i++) {
-            if (pq.size()==k && pq.peek()<arr[i]) {
+            if (pq.size()==k && pq.peek()>arr[i]) {
                 pq.remove();
                 pq.add(arr[i]);
             }
@@ -14,6 +15,8 @@ public class kLargerEle {
             }
 
         }
+        System.out.println(pq.remove());
+        System.out.println();
         while (pq.size()>0) {
                 System.out.println(pq.remove());
             

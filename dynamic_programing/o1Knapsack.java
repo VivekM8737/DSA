@@ -34,12 +34,12 @@ public class o1Knapsack {
                 }
             }
         }
-        return dp[n-1][capacity];
+        return dp[n][capacity];
     }
     public static void main(String[] args) {
         int [] wt={1,3,4,5};
         int[] val={1,4,5,7};
-        int capacity=7;
+        int capacity=13;
         int [][] dp=new int[wt.length+1][capacity+1];
         for (int i = 0; i < val.length+1; i++) {
             for (int j = 0; j < capacity+1; j++) {
@@ -47,6 +47,11 @@ public class o1Knapsack {
             }
         }
         System.out.println(o1(wt, val, capacity,wt.length,dp));
+        for (int i = 0; i < val.length+1; i++) {
+            for (int j = 0; j < capacity+1; j++) {
+                dp[i][j]=-1;
+            }
+        }
         System.out.println(o1knap(dp, wt, val, wt.length, capacity));
         
     }

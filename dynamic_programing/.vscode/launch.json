@@ -1,0 +1,112 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "LCS",
+            "request": "launch",
+            "mainClass": "LCS",
+            "projectName": "dynamic_programing_ba79d6ef"
+        },
+        {
+            "type": "java",
+            "name": "countStairPath",
+            "request": "launch",
+            "mainClass": "countStairPath",
+            "projectName": "dynamic_programing_ba79d6ef"
+        },
+        {
+            "type": "java",
+            "name": "countSubsetGivenDiff",
+            "request": "launch",
+            "mainClass": "countSubsetGivenDiff",
+            "projectName": "dynamic_programing_ba79d6ef"
+        },
+        {
+            "type": "java",
+            "name": "countSumSubset",
+            "request": "launch",
+            "mainClass": "countSumSubset",
+            "projectName": "dynamic_programing_ba79d6ef"
+        },
+        {
+            "type": "java",
+            "name": "equalSp",
+            "request": "launch",
+            "mainClass": "equalSp",
+            "projectName": "dynamic_programing_ba79d6ef"
+        },
+        {
+            "type": "java",
+            "name": "equalSumPartition",
+            "request": "launch",
+            "mainClass": "equalSumPartition",
+            "projectName": "dynamic_programing_ba79d6ef"
+        },
+        {
+            "type": "java",
+            "name": "SubsetSum",
+            "request": "launch",
+            "mainClass": "justCheck.SubsetSum",
+            "projectName": "dynamic_programing_ba79d6ef"
+        },
+        {
+            "type": "java",
+            "name": "leetcodepr",
+            "request": "launch",
+            "mainClass": "justCheck.leetcodepr",
+            "projectName": "dynamic_programing_ba79d6ef"
+        },
+        {
+            "type": "java",
+            "name": "letcode2",
+            "request": "launch",
+            "mainClass": "justCheck.letcode2",
+            "projectName": "dynamic_programing_ba79d6ef"
+        },
+        {
+            "type": "java",
+            "name": "lcsprint",
+            "request": "launch",
+            "mainClass": "lcsprint",
+            "projectName": "dynamic_programing_ba79d6ef"
+        },
+        {
+            "type": "java",
+            "name": "learn",
+            "request": "launch",
+            "mainClass": "learn",
+            "projectName": "dynamic_programing_ba79d6ef"
+        },
+        {
+            "type": "java",
+            "name": "minimumnSumSubset",
+            "request": "launch",
+            "mainClass": "minimumnSumSubset",
+            "projectName": "dynamic_programing_ba79d6ef"
+        },
+        {
+            "type": "java",
+            "name": "o1Knapsack",
+            "request": "launch",
+            "mainClass": "o1Knapsack",
+            "projectName": "dynamic_programing_ba79d6ef"
+        },
+        {
+            "type": "java",
+            "name": "printFebbo",
+            "request": "launch",
+            "mainClass": "printFebbo",
+            "projectName": "dynamic_programing_ba79d6ef"
+        }
+    ]
+}

@@ -45,10 +45,11 @@ public class checkBinaryTree {
                     x.cldn++;
 
                 } else {
-                    x.node.lch = null;
+                    // x.node.lch = null;
                     x.cldn++;
                 }
-            } else if (x.cldn == 2) {
+            } 
+            else if (x.cldn == 2) {
                 i++;
                 if (arr[i] != null) {
 
@@ -59,10 +60,11 @@ public class checkBinaryTree {
                     x.cldn++;
 
                 } else {
-                    x.node.rch = null;
+                    // x.node.rch = null;
                     x.cldn++;
                 }
-            } else if (x.cldn == 3) {
+            }
+             else if (x.cldn == 3) {
                 st.pop();
             }
         }
@@ -124,9 +126,9 @@ public class checkBinaryTree {
     }
 
     public static void main(String[] args) {
-        Integer[] arr1 = { 50,10,5,null, null,20,null,null,70 ,null, null,null};
-        // Integer[] arr = { 50, 25, 12, null, null, 37, 30, null, null, null, 75, 62, null, 70, null, null, 87, null,
-        //     null, null };
+        // Integer[] arr1 = { 50,10,5,null, null,20,null,null,70 ,null, null,null};
+        Integer[] arr1 = { 50, 25, 12, null, null, 37, 30, null, null, null, 75, 62, null, 70, null, null, 87, null,
+            null, null };
            Node root=cr_tree(arr1);
            print(root);
            System.out.println();

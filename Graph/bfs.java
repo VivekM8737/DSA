@@ -41,6 +41,26 @@ public class bfs {
         }
         bfs_(gph, visited, que);
     }
+    public static void bfs1(ArrayList<Edge>[] graph,int src){
+        boolean [] visited =new boolean[graph.length];
+        for (int i = 0; i < visited.length; i++) {
+            visited[i]=false;
+        }
+        ArrayDeque<Pair> q=new ArrayDeque<>();
+        q.add(new Pair(graph[src].get(0).src, graph[src].get(0).src+""));
+        while (q.size()>0) {
+            Pair p=q.remove();
+            if (!visited[p.v]) {
+                visited[p.v]=true;
+                System.out.println(p.v+"@"+p.path);
+                for (Edge e : graph[p.v]) {
+                    if (!visited[e.nbr]) {
+                        q.add(new Pair(e.nbr, p.path+e.nbr));
+                    }
+                }
+            }
+        }
+    }
     public static void main(String [] args){
         ArrayList<Edge>[] graph=new ArrayList[7];
         for (int i = 0; i < graph.length; i++) {
@@ -77,5 +97,7 @@ public class bfs {
         }
         q.add(new Pair(2,""));
         bfs_(graph, visited, q);
+        System.out.println("By second one");
+        bfs1(graph, 2);
     }
 }

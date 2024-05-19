@@ -28,7 +28,6 @@ public class dijkstra {
         
     }
     static Pair pp;
-    static String pth;
     public static void diktr(ArrayList<Edge> [] graph,int src,int des,int [] visited,PriorityQueue<Pair> pq){
         if (src==des) {
             pp=pq.peek();
@@ -59,6 +58,9 @@ public class dijkstra {
         Pair res=new Pair(src, null, des);
         while(pq.size()>0){
             Pair p=pq.remove();
+            if (p.path!=null && visited[p.src]==-1) {
+                System.out.println(p.src+"-"+p.path+"@"+p.wt);
+            }
             if (p.src==des) {
                 res=p;
                 break;
@@ -82,7 +84,7 @@ public class dijkstra {
             graph[i]=new ArrayList<>();
         }
         graph[0].add(new Edge(0, 1, 10));
-        graph[0].add(new Edge(0, 3, 40));
+        graph[0].add(new Edge(0, 3, 25));
 
         graph[1].add(new Edge(1, 0, 10));
         graph[1].add(new Edge(1, 2, 10));
@@ -91,7 +93,7 @@ public class dijkstra {
         graph[2].add(new Edge(2, 3, 10));
         // graph[2].add(new Edge(2, 5, 10));
 
-        graph[3].add(new Edge(3, 0, 40));
+        graph[3].add(new Edge(3, 0, 25));
         graph[3].add(new Edge(3, 2, 10));
         graph[3].add(new Edge(3, 4, 2));
 
@@ -118,10 +120,8 @@ public class dijkstra {
         PriorityQueue<Pair> pq=new PriorityQueue<>();
         Pair x=new Pair(src, src+"", 0);
         pq.add(x);
-        pp=new Pair(src, null, des);
-        diktr(graph, src, des, visited,pq);
-        System.out.println(pp.path+" with weght "+pp.wt);
-        
-
+        // pp=new Pair(src, null, des);
+        // diktr(graph, src, des, visited,pq);
+        // System.out.println(pp.path+" with weght "+pp.wt);
     }
 }

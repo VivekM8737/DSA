@@ -38,7 +38,7 @@ public class SubsetSum{
     }
     public static void main(String [] args){
         int [] arr={2,3,7,8,10};
-        int sum=11;
+        int sum=12;
         int x=checkSubset(arr, sum);
         if(x==1){
             System.out.println("Yes subset is present...");
