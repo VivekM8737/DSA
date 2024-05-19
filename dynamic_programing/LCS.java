@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class LCS {
     static int [][] t=new int[100][100]; 
     public static int lcs_len(String x,String y,int xlen,int ylen){
