@@ -5,12 +5,12 @@ public class merge_Sort {
         int j = 0;
         int k = 0;
         for (i = 0; i < marr.length; i++) {
-            if (arr[j] > arr1[k]) {
+            if (arr[j] >= arr1[k]) {
                 marr[i] = arr1[k];
                 k++;
             }
 
-            else if (arr[j] < arr1[k]) {
+            else if (arr[j] <= arr1[k]) {
                 marr[i] = arr[j];
                 j++;
             }
@@ -55,7 +55,7 @@ public class merge_Sort {
 
     public static void main(String[] args) {
 
-        int[] arr = { 5, 1, 4, 8, 2, 3 };
+        int[] arr = { 5, 1,3, 4, 8, 2, 3 };
         print(arr);
         print(sortM(arr,0,arr.length-1));
     }
