@@ -20,7 +20,7 @@ public class eggDroppingOptimize {
                 dp[egg-1][i-1]=low;
 
             }
-            if(dp[egg][flor-i]!=-1){
+            if(dp[egg][flor-i]!=-1  ){
                 high=dp[egg][flor-i];
             }else{
                 high=minimumAtamedInWorstCase(egg, flor-i,dp);

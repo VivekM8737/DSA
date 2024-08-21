@@ -9,7 +9,7 @@ public class karnighan_s {
         int n_1=0;
         while(x!=0){
             int mask=x&(-x);
-            x=(x&(-(mask<<1)));
+            x=(x&(~(mask)));
             n_1++;
         }
         System.out.println("BY me: "+n_1);
